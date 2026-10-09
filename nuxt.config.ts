@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/reader.css'],
   devtools: { enabled: false },
-  site: { name: 'Consider Phlebas' },
+  site: { name: 'Consider Phlebas', url: 'https://books.mou7s.com' },
   app: { head: { htmlAttrs: { lang: 'en' }, link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }] } },
   mcp: { enabled: false },
   llms: false,
