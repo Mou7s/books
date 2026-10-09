@@ -1,0 +1,18 @@
+:root { --ui-container: 88rem; }
+.reader-title { font-family: Georgia, 'Times New Roman', serif; letter-spacing: -.03em; }
+.reader-mark { display: inline-block; width: .6rem; height: .6rem; border: 1px solid currentColor; transform: rotate(45deg); margin-right: .7rem; }
+.reader-body, .reader-body p, .reader-body li { font-family: Georgia, 'Times New Roman', serif; font-size: 1.125rem; line-height: 1.9; }
+.reader-body p { margin-block: 1.2em; }
+.reader-body em { font-style: italic; }
+.reader-body hr { margin-block: 2.5rem; width: 4rem; margin-inline: auto; }
+.reader-body h2 { font-family: Georgia, 'Times New Roman', serif; }
+.reader-body { max-width: 44rem; margin-inline: auto; }
+.reader-body .original-heading { font-size: 1.2rem; font-weight: 600; }
+.reader-body .verse { white-space: pre-line; }
+.book-front-matter { padding-block: 1rem 3rem; }
+.book-front-matter p:first-child { font-size: 1.6rem; margin-bottom: 0; }
+.book-front-matter p:nth-child(2) { margin-top: 0; font-size: 1.35rem; }
+.book-front-matter p:nth-child(3), .book-front-matter p:nth-child(5) { margin-top: 3rem; }
+.book-front-matter p:nth-child(4), .book-front-matter p:nth-child(6) { text-align: right; margin-top: 2rem; }
+html[lang="zh-CN"] .reader-body, html[lang="zh-CN"] .reader-body p { font-family: 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', serif; line-height: 2; }
+@media (max-width: 640px) { .reader-body, .reader-body p, .reader-body li { font-size: 1.0625rem; line-height: 1.8; } }

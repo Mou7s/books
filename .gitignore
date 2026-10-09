@@ -1,0 +1,12 @@
+node_modules
+.nuxt
+.output
+.data
+.env
+*.log
+work/
+.env.*
+!.env.example
+*-desktop.png
+*-mobile.png
+epigraph-desktop.png

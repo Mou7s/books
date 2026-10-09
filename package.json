@@ -1,0 +1,19 @@
+{
+  "name": "books",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Personal book reading website built with Docus.",
+  "scripts": {
+    "dev": "nuxt dev --host 127.0.0.1",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "10.6.0",
+    "better-sqlite3": "12.11.1",
+    "docus": "5.14.0",
+    "nuxt": "4.4.8"
+  }
+}

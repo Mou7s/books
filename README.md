@@ -1,0 +1,33 @@
+# Consider Phlebas — personal reader
+
+A chapter-by-chapter English reading site using the official [Docus](https://github.com/nuxt-content/docus) Nuxt layer. Reading starts with the title and epigraphs, followed by the prologue, fourteen chapters, interludes and epilogue, with appendices available separately. Content is imported from the supplied EPUB.
+
+## Run locally
+
+Requires Node.js 24 or newer.
+
+```powershell
+npm install
+npm run dev
+```
+
+Open http://localhost:3000. The server binds to the local computer by default.
+
+```powershell
+npm run build
+npm run preview
+```
+
+## Content
+
+The site supports English (`/en`) and Simplified Chinese (`/zh-cn`), with Chinese as the default entrance. English source files live in `content/en`; Chinese translations live in `content/zh-cn`. The Chinese edition currently contains the title and epigraphs and Chapter 1, Sorpen. Language switching on untranslated chapters returns to the Chinese contents page.
+
+The `content/` folder contains editable chapter files. `scripts/import_epub.py` imports the EPUB into `content/en` using the Python standard library, leaving Chinese translations intact. To reimport:
+
+```powershell
+python scripts/import_epub.py "C:/path/to/book.epub"
+```
+
+`import-report.json` records every section's source, route, paragraph count, word count and text checksum. The EPUB's blockquote tags used for ordinary prose are normalized to paragraphs; italics, bold text and paragraph order are retained. The original file is untouched.
+
+The novel remains copyrighted by its rights holders. This project is prepared for personal local reading; verify distribution rights before publishing its full text.
