@@ -8,12 +8,18 @@
     "dev": "nuxt dev --host 127.0.0.1",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "preview": "node .output/server/index.mjs"
+    "preview": "node .output/server/index.mjs",
+    "deploy": "nuxt generate && wrangler deploy",
+    "worker:dev": "wrangler dev",
+    "worker:types": "wrangler types worker-configuration.d.ts"
   },
   "dependencies": {
     "@nuxtjs/i18n": "10.6.0",
     "better-sqlite3": "12.11.1",
     "docus": "5.14.0",
     "nuxt": "4.4.8"
+  },
+  "devDependencies": {
+    "wrangler": "^4.149.0"
   }
 }

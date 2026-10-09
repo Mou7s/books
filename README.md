@@ -18,6 +18,18 @@ npm run build
 npm run preview
 ```
 
+## Cloudflare Worker
+
+The site is deployed to https://books.mou7s.com using a Cloudflare Worker and Workers Static Assets. Nuxt generates the reading pages and browser-side search database; no server database is deployed.
+
+```powershell
+npm run deploy
+```
+
+Run `npm run worker:types` after changing bindings. `npm run worker:dev` previews the generated assets locally. The Worker redirects `/` to the Chinese contents page and preserves the older unprefixed English links.
+
+On Windows, stop the local production preview before running `npm run deploy`, so its SQLite file is released while Nuxt regenerates the output.
+
 ## Content
 
 The site supports English (`/en`) and Simplified Chinese (`/zh-cn`), with Chinese as the default entrance. English source files live in `content/en`; Chinese translations live in `content/zh-cn`. The Chinese edition currently contains the title and epigraphs and Chapter 1, Sorpen. Language switching on untranslated chapters returns to the Chinese contents page.
