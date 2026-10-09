@@ -1,24 +1,35 @@
 {
   "status": "provisional",
   "book": "Consider Phlebas",
+  "policy": {
+    "proper_names": "人名、虚构地名和无明确词义的种族名保留英文原名，不作音译；原文中的全名、简称和单复数分别保留。",
+    "semantic_terms": "有明确含义的组织、概念和描述性名称按意义翻译，如 Culture、Mind、Changer；术语保持一致。",
+    "ship_names": "舰船名逐个判断，保留幽默与双关；适合意译时首次出现附英文原名。"
+  },
   "terms": {
-    "Sorpen": "索尔彭",
+    "Sorpen": "Sorpen",
+    "Phlebas": "Phlebas",
+    "Iain M. Banks": "Iain M. Banks",
+    "T. S. Eliot": "T. S. Eliot",
     "The Culture": "文明",
+    "Mind": "心智",
     "Changer": "变形者",
-    "Idiran": "伊迪兰人",
+    "Idiran": "Idiran",
+    "Idirans": "Idirans",
     "Gerontocracy": "元老政权",
     "Gerontocrat": "元老",
     "knife missile": "刀式导弹",
     "Yearking": "年王",
     "Continental Empathaur": "大陆共情兽",
     "Sadness Season": "悲伤季",
-    "Jinmoti": "金莫提人",
-    "Bozlen Two": "博兹伦二号",
-    "Bora Horza Gobuchul": "博拉·霍尔扎·戈布丘尔",
-    "Horza": "霍尔扎",
-    "Perosteck Balveda": "佩罗斯特克·巴尔维达",
-    "Balveda": "巴尔维达",
-    "Amahain-Frolk": "阿马海恩-弗罗尔克",
-    "Egratin": "埃格拉廷"
+    "Jinmoti": "Jinmoti",
+    "Bozlen Two": "Bozlen Two",
+    "Bora Horza Gobuchul": "Bora Horza Gobuchul",
+    "Horza": "Horza",
+    "Perosteck Balveda": "Perosteck Balveda",
+    "Balveda": "Balveda",
+    "Amahain-Frolk": "Amahain-Frolk",
+    "Frolk": "Frolk",
+    "Egratin": "Egratin"
   }
 }
