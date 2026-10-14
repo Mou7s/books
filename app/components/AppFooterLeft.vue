@@ -1,1 +1,1 @@
-<template><span class="text-sm text-muted">Iain M. Banks · The Culture, Book One · 1987</span></template>
+<template><span class="text-sm text-muted">Books · Original &amp; bilingual reading</span></template>

@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  header: { title: 'Consider Phlebas' },
-  seo: { title: 'Consider Phlebas', description: 'Iain M. Banks · The Culture · Book One', titleTemplate: '%s · Consider Phlebas' },
+  header: { title: 'Books' },
+  seo: { title: 'Books', description: 'Personal reading library', titleTemplate: '%s · Books' },
   ui: { colors: { primary: 'sky', neutral: 'slate' } },
 })

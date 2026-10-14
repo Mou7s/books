@@ -13,7 +13,7 @@
     "binding": "ASSETS",
     "html_handling": "drop-trailing-slash",
     "not_found_handling": "none",
-    "run_worker_first": ["/", "/read/*", "/appendices/*", "/publication/*", "/en/publication/title-dedication"]
+    "run_worker_first": ["/", "/read/*", "/appendices/*", "/publication/*", "/en/read/*", "/en/appendices/*", "/en/publication/*", "/zh-cn/read/*", "/zh-cn/appendices/*", "/zh-cn/publication/*"]
   },
   "observability": { "enabled": true }
 }

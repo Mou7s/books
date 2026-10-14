@@ -1,0 +1,178 @@
+[
+  {
+    "id": "consider-phlebas",
+    "title": {
+      "en": "Consider Phlebas",
+      "zh-cn": "念及Phlebas"
+    },
+    "author": "Iain M. Banks",
+    "year": "1987",
+    "series": {
+      "en": "The Culture · Book One",
+      "zh-cn": "文明系列 · 第一部"
+    },
+    "cover": "/books/consider-phlebas/cover.jpg",
+    "chapters": {
+      "en": [
+        {
+          "title": "Title & epigraphs",
+          "path": "/en/books/consider-phlebas/read/title-epigraphs",
+          "key": "read/title-epigraphs"
+        },
+        {
+          "title": "Prologue",
+          "path": "/en/books/consider-phlebas/read/prologue",
+          "key": "read/prologue"
+        },
+        {
+          "title": "1. Sorpen",
+          "path": "/en/books/consider-phlebas/read/1-sorpen",
+          "key": "read/1-sorpen"
+        },
+        {
+          "title": "2. The Hand of God 137",
+          "path": "/en/books/consider-phlebas/read/2-the-hand-of-god-137",
+          "key": "read/2-the-hand-of-god-137"
+        },
+        {
+          "title": "3. Clean Air Turbulence",
+          "path": "/en/books/consider-phlebas/read/3-clean-air-turbulence",
+          "key": "read/3-clean-air-turbulence"
+        },
+        {
+          "title": "4. Temple of Light",
+          "path": "/en/books/consider-phlebas/read/4-temple-of-light",
+          "key": "read/4-temple-of-light"
+        },
+        {
+          "title": "State of play: one",
+          "path": "/en/books/consider-phlebas/read/state-of-play-one",
+          "key": "read/state-of-play-one"
+        },
+        {
+          "title": "5. Megaship",
+          "path": "/en/books/consider-phlebas/read/5-megaship",
+          "key": "read/5-megaship"
+        },
+        {
+          "title": "6. The Eaters",
+          "path": "/en/books/consider-phlebas/read/6-the-eaters",
+          "key": "read/6-the-eaters"
+        },
+        {
+          "title": "Interlude in darkness",
+          "path": "/en/books/consider-phlebas/read/interlude-in-darkness",
+          "key": "read/interlude-in-darkness"
+        },
+        {
+          "title": "7. A Game of Damage",
+          "path": "/en/books/consider-phlebas/read/7-a-game-of-damage",
+          "key": "read/7-a-game-of-damage"
+        },
+        {
+          "title": "8. The Ends of Invention",
+          "path": "/en/books/consider-phlebas/read/8-the-ends-of-invention",
+          "key": "read/8-the-ends-of-invention"
+        },
+        {
+          "title": "State of play: two",
+          "path": "/en/books/consider-phlebas/read/state-of-play-two",
+          "key": "read/state-of-play-two"
+        },
+        {
+          "title": "9. Schar's World",
+          "path": "/en/books/consider-phlebas/read/9-schar-s-world",
+          "key": "read/9-schar-s-world"
+        },
+        {
+          "title": "10. The Command System: Batholith",
+          "path": "/en/books/consider-phlebas/read/10-the-command-system-batholith",
+          "key": "read/10-the-command-system-batholith"
+        },
+        {
+          "title": "State of play: three",
+          "path": "/en/books/consider-phlebas/read/state-of-play-three",
+          "key": "read/state-of-play-three"
+        },
+        {
+          "title": "11. The Command System: Stations",
+          "path": "/en/books/consider-phlebas/read/11-the-command-system-stations",
+          "key": "read/11-the-command-system-stations"
+        },
+        {
+          "title": "12. The Command System: Engines",
+          "path": "/en/books/consider-phlebas/read/12-the-command-system-engines",
+          "key": "read/12-the-command-system-engines"
+        },
+        {
+          "title": "13. The Command System: Terminus",
+          "path": "/en/books/consider-phlebas/read/13-the-command-system-terminus",
+          "key": "read/13-the-command-system-terminus"
+        },
+        {
+          "title": "14. Consider Phlebas",
+          "path": "/en/books/consider-phlebas/read/14-consider-phlebas",
+          "key": "read/14-consider-phlebas"
+        },
+        {
+          "title": "Epilogue",
+          "path": "/en/books/consider-phlebas/read/epilogue",
+          "key": "read/epilogue"
+        },
+        {
+          "title": "Appendices: the Idiran-Culture war",
+          "path": "/en/books/consider-phlebas/appendices/appendices-the-idiran-culture-war",
+          "key": "appendices/appendices-the-idiran-culture-war"
+        },
+        {
+          "title": "Reasons: the Culture",
+          "path": "/en/books/consider-phlebas/appendices/reasons-the-culture",
+          "key": "appendices/reasons-the-culture"
+        },
+        {
+          "title": "Reasons: the Idirans",
+          "path": "/en/books/consider-phlebas/appendices/reasons-the-idirans",
+          "key": "appendices/reasons-the-idirans"
+        },
+        {
+          "title": "The war, briefly (abstract of main text)",
+          "path": "/en/books/consider-phlebas/appendices/the-war-briefly-abstract-of-main-text",
+          "key": "appendices/the-war-briefly-abstract-of-main-text"
+        },
+        {
+          "title": "Statistics",
+          "path": "/en/books/consider-phlebas/appendices/statistics",
+          "key": "appendices/statistics"
+        },
+        {
+          "title": "Historical perspective",
+          "path": "/en/books/consider-phlebas/appendices/historical-perspective",
+          "key": "appendices/historical-perspective"
+        },
+        {
+          "title": "Dramatis personae",
+          "path": "/en/books/consider-phlebas/appendices/dramatis-personae",
+          "key": "appendices/dramatis-personae"
+        },
+        {
+          "title": "Publication information",
+          "path": "/en/books/consider-phlebas/publication/publication-information",
+          "key": "publication/publication-information"
+        }
+      ],
+      "zh-cn": [
+        {
+          "title": "书名与题词",
+          "path": "/zh-cn/books/consider-phlebas/read/title-epigraphs",
+          "key": "read/title-epigraphs"
+        },
+        {
+          "title": "1. Sorpen",
+          "path": "/zh-cn/books/consider-phlebas/read/1-sorpen",
+          "key": "read/1-sorpen"
+        }
+      ]
+    },
+    "firstBilingual": "/zh-cn/books/consider-phlebas/read/title-epigraphs"
+  }
+]

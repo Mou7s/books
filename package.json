@@ -5,9 +5,9 @@
   "version": "1.0.0",
   "description": "Personal book reading website built with Docus.",
   "scripts": {
-    "predev": "node scripts/build-bilingual.mjs",
-    "prebuild": "node scripts/build-bilingual.mjs",
-    "pregenerate": "node scripts/build-bilingual.mjs",
+    "predev": "node scripts/build-library.mjs && node scripts/build-bilingual.mjs",
+    "prebuild": "node scripts/build-library.mjs && node scripts/build-bilingual.mjs",
+    "pregenerate": "node scripts/build-library.mjs && node scripts/build-bilingual.mjs",
     "dev": "nuxt dev --host 127.0.0.1",
     "build": "nuxt build",
     "generate": "nuxt generate",

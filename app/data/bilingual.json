@@ -1,5 +1,5 @@
 {
-  "/read/title-epigraphs": [
+  "/books/consider-phlebas/read/title-epigraphs": [
     {
       "en": "<p>\r\n        <strong>Consider Phlebas</strong>\r\n      </p>",
       "zh": "<p><strong>念及Phlebas</strong></p>"
@@ -25,7 +25,7 @@
       "zh": "<p>T. S. Eliot，<br>《荒原》第四部分</p>"
     }
   ],
-  "/read/1-sorpen": [
+  "/books/consider-phlebas/read/1-sorpen": [
     {
       "separator": true
     },

@@ -11,15 +11,19 @@ export default defineNuxtConfig({
     ]
   },
   routeRules: {
-    '/publication/title-dedication': { redirect: '/en/read/title-epigraphs' },
-    '/en/publication/title-dedication': { redirect: '/en/read/title-epigraphs' },
-    '/read/**': { redirect: '/en/read/**' },
-    '/appendices/**': { redirect: '/en/appendices/**' },
-    '/publication/**': { redirect: '/en/publication/**' }
+    '/publication/title-dedication': { redirect: '/en/books/consider-phlebas/read/title-epigraphs' },
+    '/en/publication/title-dedication': { redirect: '/en/books/consider-phlebas/read/title-epigraphs' },
+    '/read/**': { redirect: '/en/books/consider-phlebas/read/**' },
+    '/appendices/**': { redirect: '/en/books/consider-phlebas/appendices/**' },
+    '/publication/**': { redirect: '/en/books/consider-phlebas/publication/**' },
+    '/en/read/**': { redirect: '/en/books/consider-phlebas/read/**' },
+    '/en/appendices/**': { redirect: '/en/books/consider-phlebas/appendices/**' },
+    '/en/publication/**': { redirect: '/en/books/consider-phlebas/publication/**' },
+    '/zh-cn/read/**': { redirect: '/zh-cn/books/consider-phlebas/read/**' }
   },
   css: ['~/assets/css/reader.css'],
   devtools: { enabled: false },
-  site: { name: 'Consider Phlebas', url: 'https://books.mou7s.com' },
+  site: { name: 'Books', url: 'https://books.mou7s.com' },
   app: { head: { htmlAttrs: { lang: 'en' }, link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }] } },
   mcp: { enabled: false },
   llms: false,
