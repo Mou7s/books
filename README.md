@@ -36,6 +36,8 @@ The site supports English (`/en`) and Simplified Chinese (`/zh-cn`), with Chines
 
 Choose **双语阅读 / Bilingual** in the header language menu to read each English paragraph followed by its Chinese translation. Reading mode is controlled in this single menu. The preference is remembered; `?view=bilingual` links open that mode directly. Untranslated chapters retain their original English text. `scripts/build-bilingual.mjs` runs before development, builds and static generation, pairing paragraphs and section breaks from both source files and failing if their structures differ.
 
+Choosing Chinese or English explicitly resets bilingual mode, including on the bookshelf. Book entry links carry the selected mode through to the first reading page. A shared reading preference keeps the header, book entry and chapter renderer consistent; explicit `view=single` or `view=bilingual` links also update the saved preference.
+
 Chinese translations retain original English personal names, fictional place names and opaque species names. Meaningful terms such as Culture, Mind and Changer are translated consistently. Ship names are considered individually to preserve their humor and wordplay, with the English name included on first use when translated. Each book's terminology lives in `translations/<book-id>/terminology.zh-CN.json`.
 
 ## Add a book

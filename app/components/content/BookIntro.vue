@@ -3,6 +3,7 @@ import books from '~/data/library.json'
 const { locale, localePath } = useDocusI18n()
 const chinese = computed(() => locale.value === 'zh-cn')
 const route = useRoute()
+const { mode } = useReadingMode()
 const book = computed(() => books.find(item => item.id === route.path.split('/books/')[1]?.split('/')[0]))
 const first = computed(() => book.value?.chapters[locale.value as 'en' | 'zh-cn']?.[0]?.path || book.value?.chapters.en[0]?.path)
 </script>
@@ -14,9 +15,9 @@ const first = computed(() => book.value?.chapters[locale.value as 'en' | 'zh-cn'
       <p class="reader-title text-2xl mb-2">{{ book.author }}</p>
       <p class="text-muted mb-5">{{ book.year }} · {{ book.chapters.en.length }} {{ chinese ? '节原文' : 'original sections' }} · {{ book.chapters['zh-cn'].length }} {{ chinese ? '节译文' : 'translated sections' }}</p>
       <div class="flex flex-wrap gap-2">
-        <UButton :to="first" icon="i-lucide-book-open" color="primary">{{ chinese ? '开始阅读' : 'Begin reading' }}</UButton>
+        <UButton :to="{ path: first, query: { view: mode } }" icon="i-lucide-book-open" color="primary">{{ chinese ? '开始阅读' : 'Begin reading' }}</UButton>
         <UButton v-if="book.firstBilingual" :to="`${book.firstBilingual}?view=bilingual`" color="neutral" variant="soft">{{ chinese ? '双语阅读' : 'Bilingual' }}</UButton>
-        <UButton :to="localePath('/')" color="neutral" variant="ghost">{{ chinese ? '返回书架' : 'Bookshelf' }}</UButton>
+        <UButton :to="{ path: localePath('/'), query: { view: mode } }" color="neutral" variant="ghost">{{ chinese ? '返回书架' : 'Bookshelf' }}</UButton>
       </div>
     </div>
   </div>
