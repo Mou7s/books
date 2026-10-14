@@ -1,5 +1,5 @@
 :root { --ui-container: 88rem; }
-.book-shelf { max-width: 64rem; margin-inline: auto; padding-block: 2rem; }
+.book-shelf { max-width: 64rem; margin-inline: auto; padding: 2rem 1.5rem; }
 .book-card { display: flex; align-items: flex-start; gap: 1.5rem; padding: 1.5rem; border: 1px solid var(--ui-border); border-radius: .75rem; }
 .book-cover-link { flex: 0 0 6rem; }
 .book-cover { width: 6rem; height: 9rem; object-fit: cover; border-radius: .25rem; box-shadow: 0 3px 12px #0002; }
