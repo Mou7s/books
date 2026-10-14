@@ -7,6 +7,16 @@
 .reader-body hr { margin-block: 2.5rem; width: 4rem; margin-inline: auto; }
 .reader-body h2 { font-family: Georgia, 'Times New Roman', serif; }
 .reader-body { max-width: 44rem; margin-inline: auto; }
+.reading-mode { display: flex; gap: .25rem; width: fit-content; padding: .25rem; border: 1px solid var(--ui-border); border-radius: .5rem; margin-bottom: 2rem; font-family: system-ui, sans-serif; }
+.reading-mode button { padding: .35rem .8rem; border-radius: .3rem; font-size: .875rem; cursor: pointer; color: var(--ui-text-muted); }
+.reading-mode button[aria-pressed="true"] { background: var(--ui-bg-elevated); color: var(--ui-text); }
+.reading-mode button:focus-visible { outline: 2px solid var(--ui-primary); outline-offset: 2px; }
+.bilingual-pair { margin-block: 2rem; }
+.reader-body .bilingual-pair p { margin-block: .5rem; }
+html .reader-body .bilingual-en, html .reader-body .bilingual-en p { font-family: Georgia, 'Times New Roman', serif; line-height: 1.9; }
+html .reader-body .bilingual-zh, html .reader-body .bilingual-zh p { font-family: 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', serif; line-height: 2; }
+.bilingual-zh { padding-left: 1rem; border-left: 2px solid var(--ui-border); color: var(--ui-text-muted); }
+.reader-body .translation-unavailable { font-family: system-ui, sans-serif; font-size: .875rem; color: var(--ui-text-muted); }
 .reader-body .original-heading { font-size: 1.2rem; font-weight: 600; }
 .reader-body .verse { white-space: pre-line; }
 .book-front-matter { padding-block: 1rem 3rem; }

@@ -5,11 +5,14 @@
   "version": "1.0.0",
   "description": "Personal book reading website built with Docus.",
   "scripts": {
+    "predev": "node scripts/build-bilingual.mjs",
+    "prebuild": "node scripts/build-bilingual.mjs",
+    "pregenerate": "node scripts/build-bilingual.mjs",
     "dev": "nuxt dev --host 127.0.0.1",
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "node .output/server/index.mjs",
-    "deploy": "nuxt generate && wrangler deploy",
+    "deploy": "npm run generate && wrangler deploy",
     "worker:dev": "wrangler dev",
     "worker:types": "wrangler types worker-configuration.d.ts"
   },
