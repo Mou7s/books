@@ -1,5 +1,10 @@
 <script setup lang="ts">
 import books from '~/data/catalog.json'
+definePageMeta({ alias: ['/zh-cn', '/en'] })
+const route = useRoute()
+onMounted(() => {
+  if (route.path !== '/') navigateTo('/', { replace: true })
+})
 const search = ref('')
 const filtered = computed(() => books.filter(book => `${book.title} ${book.author}`.toLowerCase().includes(search.value.toLowerCase())))
 useHead({title:'书库 · Books'})
