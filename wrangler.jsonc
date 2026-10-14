@@ -20,15 +20,7 @@
     "binding": "ASSETS",
     "html_handling": "drop-trailing-slash",
     "not_found_handling": "none",
-    "run_worker_first": [
-      "/en",
-      "/en/*",
-      "/zh-cn",
-      "/zh-cn/*",
-      "/read/*",
-      "/appendices/*",
-      "/publication/*"
-    ]
+    "run_worker_first": true
   },
   "observability": {
     "enabled": true
