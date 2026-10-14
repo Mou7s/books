@@ -19,4 +19,4 @@ npm run deploy
 
 The Nuxt site is statically generated and served by a Cloudflare Worker at https://books.mou7s.com. Stop a running local Worker preview before generating on Windows. Older language-prefixed book links redirect to the original edition.
 
-Reading settings and position are saved in the current browser. The reader supports adjustable font size and white, paper and night backgrounds. No cloud synchronization is provided.
+Reading settings and position are saved in the current browser. The reader supports adjustable font size and default white and night backgrounds. No cloud synchronization is provided.
