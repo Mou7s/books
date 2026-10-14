@@ -15,9 +15,9 @@ parser.add_argument('--title')
 parser.add_argument('--author')
 args = parser.parse_args()
 if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', args.id): parser.error('Invalid book ID')
-BOOK_ROOT = ROOT / 'content' / 'en' / 'books' / args.id
+BOOK_ROOT = ROOT / 'content' / 'books' / args.id
 assert BOOK_ROOT.resolve().is_relative_to(ROOT.resolve())
-REPORT_ROOT = ROOT / 'translations' / args.id
+REPORT_ROOT = ROOT / 'imports' / args.id
 registry_path = ROOT / 'books.json'
 registry = json.loads(registry_path.read_text(encoding='utf-8')) if registry_path.exists() else []
 existing = next((book for book in registry if book['id'] == args.id), None)
@@ -96,7 +96,7 @@ with zipfile.ZipFile(args.epub) as z:
         # Plain HTML within a Vue component keeps the novel's punctuation out of MDC syntax.
         html = html.replace('{{', '&#123;&#123;').replace('}}', '&#125;&#125;')
         pending.append((page, '---\ntitle: ' + json.dumps(title) + '\ndescription: ' + json.dumps(author + ' · ' + book_title) + '\n---\n\n::reader-text\n' + html + '\n::\n'))
-        record = {'source': href, 'title': title, 'route': '/en/books/' + args.id + '/' + folder.split('.',1)[1] + '/' + slug, 'paragraphs': sum(bool(t.strip()) for t,_ in parts), 'words': len(raw.split()), 'text_sha256': hashlib.sha256(raw.encode()).hexdigest()}
+        record = {'source': href, 'title': title, 'route': '/books/' + args.id + '/' + folder.split('.',1)[1] + '/' + slug, 'paragraphs': sum(bool(t.strip()) for t,_ in parts), 'words': len(raw.split()), 'text_sha256': hashlib.sha256(raw.encode()).hexdigest()}
         report.append(record)
         if folder == '1.read': reading.append(record)
     assert report, 'No readable sections found'
@@ -117,7 +117,7 @@ with zipfile.ZipFile(args.epub) as z:
     for folder, title in zip(folders, ['Read the novel', 'Appendices', 'Publication information']):
         path = BOOK_ROOT / folder
         if path.exists(): (path / '.navigation.yml').write_text('title: ' + json.dumps(title) + '\n', encoding='utf-8')
-    book = existing or {'id': args.id, 'title': {'en': book_title, 'zh-cn': book_title}, 'author': author, 'year': meta('date')[:4], 'series': {'en': '', 'zh-cn': ''}, 'cover': ''}
+    book = existing or {'id': args.id, 'title': book_title, 'author': author, 'year': meta('date')[:4], 'series': '', 'cover': ''}
     if cover:
         target = ROOT / 'public/books' / args.id / ('cover' + Path(cover).suffix)
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -126,5 +126,5 @@ with zipfile.ZipFile(args.epub) as z:
     if not existing: registry.append(book)
     registry_path.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     REPORT_ROOT.mkdir(parents=True, exist_ok=True)
-    (REPORT_ROOT / 'import-report.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+    (REPORT_ROOT / 'report.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'pages': len(report), 'reading_sections': len(reading), 'words': sum(r['words'] for r in report), 'paragraphs': sum(r['paragraphs'] for r in report)}))

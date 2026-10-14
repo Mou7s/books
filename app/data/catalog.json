@@ -1,0 +1,157 @@
+[
+  {
+    "id": "consider-phlebas",
+    "title": "Consider Phlebas",
+    "author": "Iain M. Banks",
+    "year": "1987",
+    "series": "The Culture · Book One",
+    "cover": "/books/consider-phlebas/cover.jpg",
+    "chapters": [
+      {
+        "title": "Title & epigraphs",
+        "key": "read/title-epigraphs",
+        "path": "/books/consider-phlebas/read/title-epigraphs"
+      },
+      {
+        "title": "Prologue",
+        "key": "read/prologue",
+        "path": "/books/consider-phlebas/read/prologue"
+      },
+      {
+        "title": "1. Sorpen",
+        "key": "read/1-sorpen",
+        "path": "/books/consider-phlebas/read/1-sorpen"
+      },
+      {
+        "title": "2. The Hand of God 137",
+        "key": "read/2-the-hand-of-god-137",
+        "path": "/books/consider-phlebas/read/2-the-hand-of-god-137"
+      },
+      {
+        "title": "3. Clean Air Turbulence",
+        "key": "read/3-clean-air-turbulence",
+        "path": "/books/consider-phlebas/read/3-clean-air-turbulence"
+      },
+      {
+        "title": "4. Temple of Light",
+        "key": "read/4-temple-of-light",
+        "path": "/books/consider-phlebas/read/4-temple-of-light"
+      },
+      {
+        "title": "State of play: one",
+        "key": "read/state-of-play-one",
+        "path": "/books/consider-phlebas/read/state-of-play-one"
+      },
+      {
+        "title": "5. Megaship",
+        "key": "read/5-megaship",
+        "path": "/books/consider-phlebas/read/5-megaship"
+      },
+      {
+        "title": "6. The Eaters",
+        "key": "read/6-the-eaters",
+        "path": "/books/consider-phlebas/read/6-the-eaters"
+      },
+      {
+        "title": "Interlude in darkness",
+        "key": "read/interlude-in-darkness",
+        "path": "/books/consider-phlebas/read/interlude-in-darkness"
+      },
+      {
+        "title": "7. A Game of Damage",
+        "key": "read/7-a-game-of-damage",
+        "path": "/books/consider-phlebas/read/7-a-game-of-damage"
+      },
+      {
+        "title": "8. The Ends of Invention",
+        "key": "read/8-the-ends-of-invention",
+        "path": "/books/consider-phlebas/read/8-the-ends-of-invention"
+      },
+      {
+        "title": "State of play: two",
+        "key": "read/state-of-play-two",
+        "path": "/books/consider-phlebas/read/state-of-play-two"
+      },
+      {
+        "title": "9. Schar's World",
+        "key": "read/9-schar-s-world",
+        "path": "/books/consider-phlebas/read/9-schar-s-world"
+      },
+      {
+        "title": "10. The Command System: Batholith",
+        "key": "read/10-the-command-system-batholith",
+        "path": "/books/consider-phlebas/read/10-the-command-system-batholith"
+      },
+      {
+        "title": "State of play: three",
+        "key": "read/state-of-play-three",
+        "path": "/books/consider-phlebas/read/state-of-play-three"
+      },
+      {
+        "title": "11. The Command System: Stations",
+        "key": "read/11-the-command-system-stations",
+        "path": "/books/consider-phlebas/read/11-the-command-system-stations"
+      },
+      {
+        "title": "12. The Command System: Engines",
+        "key": "read/12-the-command-system-engines",
+        "path": "/books/consider-phlebas/read/12-the-command-system-engines"
+      },
+      {
+        "title": "13. The Command System: Terminus",
+        "key": "read/13-the-command-system-terminus",
+        "path": "/books/consider-phlebas/read/13-the-command-system-terminus"
+      },
+      {
+        "title": "14. Consider Phlebas",
+        "key": "read/14-consider-phlebas",
+        "path": "/books/consider-phlebas/read/14-consider-phlebas"
+      },
+      {
+        "title": "Epilogue",
+        "key": "read/epilogue",
+        "path": "/books/consider-phlebas/read/epilogue"
+      },
+      {
+        "title": "Appendices: the Idiran-Culture war",
+        "key": "appendices/appendices-the-idiran-culture-war",
+        "path": "/books/consider-phlebas/appendices/appendices-the-idiran-culture-war"
+      },
+      {
+        "title": "Reasons: the Culture",
+        "key": "appendices/reasons-the-culture",
+        "path": "/books/consider-phlebas/appendices/reasons-the-culture"
+      },
+      {
+        "title": "Reasons: the Idirans",
+        "key": "appendices/reasons-the-idirans",
+        "path": "/books/consider-phlebas/appendices/reasons-the-idirans"
+      },
+      {
+        "title": "The war, briefly (abstract of main text)",
+        "key": "appendices/the-war-briefly-abstract-of-main-text",
+        "path": "/books/consider-phlebas/appendices/the-war-briefly-abstract-of-main-text"
+      },
+      {
+        "title": "Statistics",
+        "key": "appendices/statistics",
+        "path": "/books/consider-phlebas/appendices/statistics"
+      },
+      {
+        "title": "Historical perspective",
+        "key": "appendices/historical-perspective",
+        "path": "/books/consider-phlebas/appendices/historical-perspective"
+      },
+      {
+        "title": "Dramatis personae",
+        "key": "appendices/dramatis-personae",
+        "path": "/books/consider-phlebas/appendices/dramatis-personae"
+      },
+      {
+        "title": "Publication information",
+        "key": "publication/publication-information",
+        "path": "/books/consider-phlebas/publication/publication-information"
+      }
+    ]
+  }
+]
