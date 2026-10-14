@@ -1,7 +1,11 @@
 export default defineNuxtConfig({
-  compatibilityDate: '2026-10-14',
+  extends: ['docus'],
   css: ['~/assets/css/reader.css'],
   devtools: { enabled: false },
-  app: { head: { htmlAttrs: { lang: 'zh-CN' }, link: [{rel:'icon',type:'image/svg+xml',href:'/favicon.svg'}], meta:[{name:'robots',content:'noindex, nofollow'}] } },
-  nitro: { prerender: { crawlLinks: true, routes: ['/'] } }
+  site: { name: 'Books', url: 'https://books.mou7s.com' },
+  app: { head: { htmlAttrs: { lang:'zh-CN' }, link:[{rel:'icon',type:'image/svg+xml',href:'/favicon.svg'}] } },
+  mcp: { enabled:false },
+  llms:false,
+  ogImage:{enabled:false},
+  robots:{groups:[{userAgent:'*',disallow:'/'}]}
 })

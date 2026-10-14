@@ -17,6 +17,8 @@
     "worker:types": "wrangler types worker-configuration.d.ts"
   },
   "dependencies": {
+    "better-sqlite3": "12.11.1",
+    "docus": "5.14.0",
     "nuxt": "4.4.8"
   },
   "devDependencies": {

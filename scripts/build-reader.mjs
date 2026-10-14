@@ -17,9 +17,6 @@ async function walk(directory, base, id) {
       if (!title || !html) throw Error(`Invalid chapter: ${path}`)
       const key = relative(base,path).replaceAll('\\','/').replace(/\.md$/,'').split('/').map(part=>part.replace(/^\d+\./,'')).join('/')
       const chapter = { title, key, path: `/books/${id}/${key}` }
-      const output = join(root,'app/data/chapters',id)
-      await mkdir(output,{recursive:true})
-      await writeFile(join(output,key.replaceAll('/','--')+'.json'),JSON.stringify({title,html})+'\n')
       chapters.push(chapter)
     }
   }
@@ -33,6 +30,9 @@ for (const book of books) {
   const chapters = await walk(base,base,book.id)
   if (!chapters.length) throw Error(`Empty book: ${book.id}`)
   catalog.push({...book,chapters})
+  await writeFile(join(base,'.navigation.yml'),`title: ${JSON.stringify(book.title)}\n`)
+  await writeFile(join(base,'index.md'),`---\ntitle: ${JSON.stringify(book.title)}\ndescription: ${JSON.stringify(book.author)}\n---\n\n::book-intro\n::\n\n## 目录\n\n${chapters.map(c=>`- [${c.title}](${c.path})`).join('\n')}\n`)
 }
 await writeFile(join(root,'app/data/catalog.json'),JSON.stringify(catalog,null,2)+'\n')
+await writeFile(join(root,'content/index.md'),'---\ntitle: 书架\ndescription: EPUB 原文阅读\nnavigation: false\n---\n\n::book-shelf\n::\n')
 console.log(`Prepared ${catalog.length} books, ${catalog.reduce((sum,b)=>sum+b.chapters.length,0)} original sections.`)
