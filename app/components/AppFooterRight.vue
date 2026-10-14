@@ -1,1 +1,1 @@
-<template><span class="text-sm text-muted">Personal reading edition</span></template>
+<template><span class="text-sm text-muted">个人书架</span></template>

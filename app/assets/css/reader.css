@@ -1,12 +1,3 @@
-:root { --ui-container: 88rem; }
-.book-shelf { max-width: 64rem; margin-inline: auto; padding: 2rem 1.5rem; }
-.book-card { display: flex; align-items: flex-start; gap: 1.5rem; padding: 1.5rem; border: 1px solid var(--ui-border); border-radius: .75rem; }
-.book-cover-link { flex: 0 0 6rem; }
-.book-cover { width: 6rem; height: 9rem; object-fit: cover; border-radius: .25rem; box-shadow: 0 3px 12px #0002; }
-.book-cover-placeholder { display: grid; place-items: center; width: 6rem; height: 9rem; background: var(--ui-bg-elevated); font-size: 2rem; border-radius: .25rem; }
-@media (max-width: 480px) { .book-card { padding: 1rem; gap: 1rem; } }
-.reader-title { font-family: Georgia, 'Times New Roman', serif; letter-spacing: -.03em; }
-.reader-mark { display: inline-block; width: .6rem; height: .6rem; border: 1px solid currentColor; transform: rotate(45deg); margin-right: .7rem; }
 .reader-body, .reader-body p, .reader-body li { font-family: Georgia, 'Times New Roman', serif; font-size: 1.125rem; line-height: 1.9; }
 .reader-body p { margin-block: 1.2em; }
 .reader-body em { font-style: italic; }

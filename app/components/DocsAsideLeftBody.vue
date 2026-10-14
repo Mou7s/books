@@ -2,7 +2,7 @@
 import type { ContentNavigationItem } from '@nuxt/content'
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 const route = useRoute()
-const { locale } = useDocusI18n()
+
 const prefix = computed(() => route.path.match(/^\/books\/[^/]+/)?.[0])
 function findBook(items: ContentNavigationItem[], path: string): ContentNavigationItem | undefined {
   for (const item of items) {
@@ -15,8 +15,8 @@ const chapters = computed(() => prefix.value ? findBook(navigation?.value || [],
 </script>
 <template>
   <nav>
-    <NuxtLink :to="'/'" class="block mb-5 text-sm text-muted">← {{ locale === 'zh-cn' ? '返回书架' : 'Bookshelf' }}</NuxtLink>
-    <NuxtLink v-if="prefix" :to="prefix" class="block mb-4 text-sm font-medium">{{ locale === 'zh-cn' ? '本书目录' : 'Book contents' }}</NuxtLink>
+    <NuxtLink :to="'/'" class="block mb-5 text-sm text-muted">← 返回书架</NuxtLink>
+    <NuxtLink v-if="prefix" :to="prefix" class="block mb-4 text-sm font-medium">本书目录</NuxtLink>
     <UContentNavigation v-if="chapters.length" :navigation="chapters" :collapsible="false" highlight />
   </nav>
 </template>
